@@ -30,9 +30,9 @@ services:
           }
           output {
                amazon_es {
-                   hosts => ["%CLUSER_HOST%.us-east-1.es.amazonaws.com"]
-                   region => "%AWS_REGION%"
-                   index => "%INDEX_NAME%-%{+YYYY.MM.dd}"
+                   hosts => ["CLUSER_HOST.us-east-1.es.amazonaws.com"]
+                   region => "us-east-1"
+                   index => "INDEX_NAME-%{+YYYY.MM.dd}"
                }
            }
           '
